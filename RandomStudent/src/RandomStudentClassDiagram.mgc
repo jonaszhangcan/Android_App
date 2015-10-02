@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class
+        name="com.zhongzhang.randomstudent.adapter.StudentAdapter.ViewHolder"
+        x="350" y="346">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.zhongzhang.randomstudent.tool.ClickDeleteStudent"
+        x="964" y="494">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.zhongzhang.randomstudent.MainActivity" x="935" y="19">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.zhongzhang.randomstudent.tool.ClickDeleteStudent"/>
+        <Extension destinationClassName="com.zhongzhang.randomstudent.tool.ClickPhoto"/>
+        <Association
+            destinationClassName="com.zhongzhang.randomstudent.adapter.StudentAdapter"
+            endpointName="adapter" kind="Simple"/>
+        <Association
+            destinationClassName="com.zhongzhang.randomstudent.bean.StudentBean"
+            endpointName="studentBeans" kind="Simple"/>
+        <Communication destinationClassName="com.zhongzhang.randomstudent.tool.Tool"/>
+        <Communication destinationClassName="com.zhongzhang.randomstudent.bean.StudentBean"/>
+    </Class>
+    <Class name="com.zhongzhang.randomstudent.adapter.StudentAdapter"
+        x="549" y="502">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.zhongzhang.randomstudent.tool.ClickDeleteStudent"
+            endpointName="mDeleteStudent" kind="Simple"/>
+        <Association
+            destinationClassName="com.zhongzhang.randomstudent.bean.StudentBean"
+            endpointName="beans" kind="Simple"/>
+        <Association
+            destinationClassName="com.zhongzhang.randomstudent.tool.ClickPhoto"
+            endpointName="mClickPhoto" kind="Simple"/>
+        <Communication destinationClassName="com.zhongzhang.randomstudent.bean.StudentBean"/>
+    </Class>
+    <Class name="com.zhongzhang.randomstudent.tool.ClickPhoto" x="825" y="407">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.zhongzhang.randomstudent.tool.Tool" x="408" y="278">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.zhongzhang.randomstudent.bean.StudentBean"/>
+    </Class>
+    <Class name="com.zhongzhang.randomstudent.bean.StudentBean" x="539" y="66">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>
